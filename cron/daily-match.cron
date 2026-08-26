@@ -1,0 +1,5 @@
+SHELL=/bin/zsh
+PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# Run every day at 9:00 AM local time
+0 9 * * * cd /Users/sagartripathi/Documents/New\ project && npm run daily-match >> /tmp/labhsetu-daily-match.log 2>&1

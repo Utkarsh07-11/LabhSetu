@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --muted: #6b7280;
+  --border: rgba(41, 37, 36, 0.12);
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
+  --font-sans: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "JetBrains Mono", "Menlo", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top, rgba(245, 158, 11, 0.08), transparent 30%),
+    linear-gradient(180deg, #fffdf8 0%, #fafaf9 30%, #f8faf7 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.section-title {
+  @apply font-serif text-3xl leading-tight text-stone-900 sm:text-4xl;
+}
+
+.section-copy {
+  @apply max-w-2xl text-base leading-7 text-stone-600;
+}
+
+.panel {
+  @apply rounded-[28px] border border-stone-200/80 bg-white/90 shadow-soft backdrop-blur;
+}
